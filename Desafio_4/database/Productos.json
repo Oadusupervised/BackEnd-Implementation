@@ -1,0 +1,90 @@
+[
+    {
+      "id": "1l",
+      "title": "Producto 1",
+      "description": "Descripción del producto 1",
+      "code": "P001",
+      "price": 10.99,
+      "status": true,
+      "stock": 50,
+      "category": "Categoría 1",
+      "thumbnails": ["ruta/imagen1.jpg", "ruta/imagen2.jpg"]
+    },
+    {
+      "id": "2",
+      "title": "Producto 2",
+      "description": "Descripción del producto 2",
+      "code": "P002",
+      "price": 19.99,
+      "status": true,
+      "stock": 20,
+      "category": "Categoría 2",
+      "thumbnails": ["ruta/imagen3.jpg", "ruta/imagen4.jpg"]
+    },
+    {
+      "id": "3",
+      "title": "Producto 3",
+      "description": "Descripción del producto 3",
+      "code": "P003",
+      "price": 5.99,
+      "status": true,
+      "stock": 100,
+      "category": "Categoría 3",
+      "thumbnails": ["ruta/imagen5.jpg", "ruta/imagen6.jpg"]
+    },
+    {
+      "id": "4",
+      "title": "Producto 4",
+      "description": "Descripción del producto 4",
+      "code": "P004",
+      "price": 8.50,
+      "status": true,
+      "stock": 30,
+      "category": "Categoría 4",
+      "thumbnails": ["ruta/imagen7.jpg", "ruta/imagen8.jpg"]
+    },
+    {
+      "id": "5",
+      "title": "Producto 5",
+      "description": "Descripción del producto 5",
+      "code": "P005",
+      "price": 15.75,
+      "status": true,
+      "stock": 75,
+      "category": "Categoría 2",
+      "thumbnails": ["ruta/imagen9.jpg", "ruta/imagen10.jpg"]
+    },
+    {
+      "id": "6",
+      "title": "Producto 6",
+      "description": "Descripción del producto 6",
+      "code": "P006",
+      "price": 12.99,
+      "status": true,
+      "stock": 10,
+      "category": "Categoría 1",
+      "thumbnails": ["ruta/imagen11.jpg", "ruta/imagen12.jpg"]
+    },
+    {
+      "id": "7",
+      "title": "Producto 7",
+      "description": "Descripción del producto 7",
+      "code": "P007",
+      "price": 6.49,
+      "status": true,
+      "stock": 200,
+      "category": "Categoría 3",
+      "thumbnails": ["ruta/imagen13.jpg", "ruta/imagen14.jpg"]
+    },
+    {
+      "id": "8",
+      "title": "Producto 8",
+      "description": "Descripción del producto 8",
+      "code": "P008",
+      "price": 22.00,
+      "status": true,
+      "stock": 5,
+      "category": "Categoría 4",
+      "thumbnails": ["ruta/imagen15.jpg", "ruta/imagen16.jpg"]
+    }
+]
