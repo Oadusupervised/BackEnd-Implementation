@@ -1,0 +1,25 @@
+<h1>realTimeMessages</h1>
+<form>
+<label for="user">user</label><input id="inputUser" name="user" type="text">
+<label for="message">message</label><input id="inputMessages" name="message" type="text">
+<button type="submit" id="btnEnviar3">enviar</button>
+</form>
+<h3>mensajesActuales</h3>
+<div id="listadoMensajes">
+    {{#if hayMensajes}}
+    <ul>
+        {{#each mensajes}}
+        <li>user: {{this.user}} | message: {{this.message}}
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>no hay mensajes para mostrar</p>
+    {{/if}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/cargaMessages.js"></script>

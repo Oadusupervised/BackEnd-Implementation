@@ -1,0 +1,34 @@
+<h1>realTimeProducts</h1>
+<form><label for="id">id</label><input id="inputId" name="id" type="text">
+<label for="title">title</label><input id="inputTitle" name="title" type="text">
+<label for="description">description</label><input id="inputDescription" name="description" type="text">
+<label for="code">code</label><input id="inputCode" name="code" type="text">
+<label for="price">price</label><input id="inputPrice" name="price" type="number">
+<label for="status">status</label><input id="inputStatus" name="status" type="checkbox">
+<label for="stock">stock</label><input id="inputStock" name="stock" type="number">
+<label for="category">category</label><input id="inputCategory" name="category" type="text">
+<label for="thumbnails">thumbnails</label><input id="inputThumbnails" name="thumbnails" type="text">
+<button type="submit" id="btnEnviar">enviar</button>
+</form>
+
+<h3>productosActuales</h3>
+<div id="listadoProductos">
+    {{#if hayProductos}}
+    <ul>
+        {{#each productos}}
+        <li>id: {{this.id}} | title: {{this.title}} | description: {{this.description}}
+            code: {{this.code}} | price: {{this.price}} | status: {{this.status}}
+            stock: {{this.stock}} | category: {{this.category}} | thumbnails: {{this.thumbnails}}
+        </li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>no hay productos para mostrar</p>
+    {{/if}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/cargaProductos.js"></script>

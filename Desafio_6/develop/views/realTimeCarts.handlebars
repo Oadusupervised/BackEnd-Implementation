@@ -1,0 +1,27 @@
+<h1>realTimeCarts</h1>
+
+<form>
+<label for="id">id</label><input id="inputId" name="id" type="text">
+<label for="nombreProducts">nombreProducts</label><input id="inputNombreProducts" name="nombreProducts" type="text">
+<button type="submit" id="btnEnviar2">enviar</button>
+</form>
+
+<h3>carritosActuales</h3>
+<div id="listadoCarritos">
+    {{#if hayProductos}}
+    <ul>
+        {{#each productos}}
+        <li>id: {{this.id}} | nombreProducts: {{this.nombreProducts}}
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>no hay carritos para mostrar</p>
+    {{/if}}
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+    integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/cargaCarts.js"></script>
